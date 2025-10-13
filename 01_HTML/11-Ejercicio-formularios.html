@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formularios</title>
+</head>
+<body>
+    <h1>Ejercicio Formularios</h1>
+
+    <h2>Formulario 1 – Registrarse en el club</h2>
+    <form id="registro-club">
+        <fieldset>
+            <legend>Datos personales</legend><br>
+    
+            <label for="nombre">Nombre</label>
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                required 
+                placeholder="Nombre" 
+                autofocus 
+                tabindex="1"
+            >
+    
+            <label for="apellidos">Apellidos</label>
+            <input 
+                type="text" 
+                id="apellidos" 
+                name="apellidos" 
+                required 
+                placeholder="Apellidos"
+                tabindex="2"
+            >
+    
+            <label for="edad">Edad</label>
+            <input 
+                type="number" 
+                id="edad" 
+                name="edad"
+                tabindex="3"
+            >
+            <br>
+            <span>Sexo</span>
+    
+                <input 
+                    type="radio" 
+                    id="sexo-h" 
+                    name="sexo"
+                    value="hombre"
+                    tabindex="4"
+                >
+                <label for="sexo-h">Hombre</label>
+    
+                <input 
+                    type="radio" 
+                    id="sexo-m" 
+                    name="sexo"
+                    value="mujer"
+                    tabindex="5"
+                >
+                <label for="sexo-m">Mujer</label>
+    
+                <input 
+                    type="radio" 
+                    id="sexo-o" 
+                    name="sexo"
+                    value="otros"
+                    tabindex="6"
+                >
+                <label for="sexo-o">Otros</label>
+    
+                <br>
+                <input type="checkbox" name="socio" id="socio" tabindex="7">
+                <label for="socio">Me siento del club</label>
+    
+                <br>
+                <label for="sobre-ti">Escribe algo sobre ti</label>
+                <textarea name="sobre-ti" id="sobre-ti" rows="4" cols="15" placeholder="Cuéntanos algo sobre ti.." tabindex="8"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                tabindex="9"
+            >
+
+            <label for="telefono">Teléfono</label>
+            <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono"
+                tabindex="10"
+            >
+        </fieldset>
+
+        <div>
+            <input type="reset" value="Reiniciar" tabindex="11">
+            <input type="submit" value="Enviar formulario" tabindex="12">
+        </div>
+    </form>
+
+    <h2>Formulario 2 – Registrar el robo de la bicicleta</h2>
+    <form id="robo-bici">
+        <fieldset>
+            <legend>Datos del suceso</legend>
+
+            <label for="dia">Día</label>
+            <input 
+                type="date" 
+                id="dia" 
+                name="dia"
+                tabindex="1"
+            >
+
+            <label for="hora">Hora</label>
+            <input 
+                type="time" 
+                id="hora" 
+                name="hora"
+                tabindex="2"
+            >
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la bicicleta</legend>
+
+            <label for="color">Color</label>
+            <input 
+                type="color" 
+                id="color" 
+                name="color"
+                tabindex="3"
+            >
+
+            <label for="precio">Rango de precio</label>
+            <input 
+                type="range" 
+                id="precio" 
+                name="precio"
+                tabindex="4"
+            >
+
+            <label for="tipo">Tipo de bicicleta</label>
+            <select name="tipo" id="tipo" required tabindex="5">
+                <option>Elige uno...</option>
+                <optgroup label="Urbana / Ciudad">
+                    <option value="clasica">Bicicleta Clásica</option>
+                    <option value="plegable">Bicicleta Plegable</option>
+                    <option value="electrica">Bicicleta Eléctrica</option>
+                    <option value="commuter">Bicicleta Commuter</option>
+                </optgroup>
+                <optgroup label="Montaña / MTB">
+                    <option value="sport">Bicicleta tipo Sport</option>
+                    <option value="trail">Bicicleta tipo Trail o Hard Tail</option>
+                    <option value="cross">Bicicleta XC o Cross Country</option>
+                </optgroup>
+                <optgroup label="Carretera / Road">
+                    <option value="fondo">Bicicleta Gran Fondo</option>
+                    <option value="racing">Bicicleta Racing</option>
+                    <option value="aero">Bicicleta Aero</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <label for="accesorios">Accesorios</label>
+            <select name="accesorios" id="accesorios" multiple sixe="6" tabindex="6">
+                <option value="Ruedines">Ruedines</option>
+                <option value="Hinchadores">Hinchadores</option>
+                <option value="Rodillos">Rodillos</option>
+                <option value="Bomba">Bomba de aire</option>
+                <option value="Alforja">Alforja</option>
+                <option value="Portabebes">Silla portabebés</option>
+            </select>
+            <br><br>
+
+            <label for="marca">¿Qué marca era?</label>
+            <input list="marcas" id="marca" name="marca" placeholder="Escribe o elige una marca" tabindex="7">
+            <datalist id="marcas">
+                <option value="specialized">specialized</option>
+                <option value="trek">trek</option>
+                <option value="merida">merida</option>
+                <option value="scott">scott</option>
+                <option value="giant">giant</option>
+                <option value="cube">cube</option>
+                <option value="lapierre">lapierre</option>
+                <option value="orbea">orbea</option>
+                <option value="look">look</option>
+            </datalist>
+        </fieldset>
+
+        <div>
+            <input type="reset" value="Reiniciar" tabindex="11">
+            <input type="submit" value="Enviar formulario" tabindex="12">
+        </div>
+    </form>
+</body>
+</html>

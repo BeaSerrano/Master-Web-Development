@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores</title>
+</head>
+<body>
+    <h1>Contenedores y HTML semántico</h1>
+
+    <!-- div y span, no son etiquetas semánticas -->
+
+    <div style="background-color: aliceblue;">
+        <h2>Artículo</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span style="color:red;">Quaerat ullam nemo fuga itaque</span>, tempore minima ut, sunt harum officiis placeat autem, quasi deserunt excepturi dolore sapiente doloribus explicabo. Rem, recusandae.</p>
+    </div>
+
+    <!-- Etiquetas de contendor semánticas -->
+
+    <header style="background-color: bisque;">
+        <h1>Blog</h1>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Artículos</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+
+    <main style="background-color: cadetblue; padding: 10px;">
+        <section style="background-color: darkgray;">
+            <article>
+                <h2>Recetas 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <h2>Recetas 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </article>
+        </section>
+        <section style="background-color: darkgray;">
+            <article>
+                <h2>Postres 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <h2>Postres 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer style="background-color: pink;">
+        <p>2025 Mi Blog - Todos los derechos Reservados</p>
+    </footer>
+
+
+    <!-- Antes y después de HTML semántico -->
+
+        <!-- Antes -->
+        <div class="header"></div>
+        <div class="main"></div>
+        <div class="footer"></div>
+
+        <!-- Ahora -->
+        <header></header>
+        <main></main>
+        <footer></footer>
+
+</body>
+</html>

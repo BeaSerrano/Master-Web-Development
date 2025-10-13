@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>28</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>35</td>
+            <td>Cáceres</td>
+        </tr>
+    </table>
+
+<br><br>
+
+    <table border="5" cellpadding="5" cellspacing="10">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="row">Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>28</td>
+                <td>Madrid</td>
+                <th rowspan="3">Usuarios</th>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>35</td>
+                <td>Cáceres</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Usuarios hoy</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

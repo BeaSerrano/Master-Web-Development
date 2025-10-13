@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form>
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="email@gmail.com"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="30" maxlength="150" placeholder="Deja aquí tu mensaje"></textarea><br><br>
+    
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="0" max="100" readonly ><br>
+    
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fecha" id="fecha" disabled><br>
+    
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" ><br>
+    
+            <label>Género:</label>
+    
+                <input type="radio" name="genero" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+    
+                <input type="radio" name="genero" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+                
+                <input type="radio" name="genero" id="binario" value="binario" checked>
+                <label for="binario">Binario</label>
+            <br>
+            <label>Intereses:</label>
+    
+                <input type="checkbox" name="intereses" id="musica" value="musica">
+                <label for="musica">Música</label>
+    
+                <input type="checkbox" name="intereses" id="deporte" value="deporte">
+                <label for="deporte">Deporte</label>
+    
+                <input type="checkbox" name="intereses" id="cine" value="cine">
+                <label for="cine">Cine</label>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar"><br><br>
+    </form>
+</body>
+</html>
