@@ -3,7 +3,7 @@
 Bienvenido/a al repositorio del **Master de Web Development**.  
 Aquí encontrarás los recursos, ejercicios y enlaces útiles que acompañan los vídeos del curso.  
 
-El curso está dividido en **4 módulos**, abarcando desde los fundamentos del desarrollo web hasta el despliegue de aplicaciones completas con **Node.js**, **Express**, **React** y **Bases de Datos SQL y NoSQL**.
+El curso está dividido en **4 módulos**, abarcando desde los fundamentos del desarrollo web con **HTML, CSS y JavaScript** hasta el despliegue de aplicaciones completas con **Node.js**, **Express**, **React** y **Bases de Datos SQL y NoSQL**.
 
 ---
 
@@ -12,7 +12,7 @@ El curso está dividido en **4 módulos**, abarcando desde los fundamentos del d
 ### 🧩 MÓDULO 1 - FUNDAMENTOS
 
 **Contenido:**
-- Introducción al Desarrollo Web Fullstack  
+- Introducción al Desarrollo Web Fullstack
 - Instalaciones necesarias  
 - Uso de la Terminal  
 - Control de versiones con **Git**  
