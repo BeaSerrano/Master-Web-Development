@@ -1,0 +1,74 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, nav, main, aside, footer {
+
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+header {
+    background-color:aliceblue;
+}
+
+nav {
+    background-color:aquamarine;
+}
+
+main {
+    background-color:cornflowerblue;
+}
+
+aside {
+    background-color:lightcoral;
+    display: none;
+}
+
+footer {
+    background-color:peachpuff;
+}
+
+/* TABLET > 768 */
+
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+        gap: 10px;
+    }
+
+    header { grid-area: header; }
+    nav { grid-area: nav; }
+    main { grid-area: main; }
+    footer { grid-area: footer; }
+}
+
+/* DESKTOP > 1024 */
+
+@media (min-width: 1024px) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    }
+
+    aside {
+        display: block;
+    }
+}

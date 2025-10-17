@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+
+body {
+    font-size: 15px;
+}
+
+.menu-links {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TABLET > 768 */
+
+@media (min-width: 768px){
+    body {
+        font-size: 20px;
+    }
+
+    .menu-links {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
+/* DESKTOP > 1024 */
+
+@media (min-width: 1024px){
+    body {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,109 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TRANSICIONES */
+
+/*
+    1) Transition-property ---> qué propiedad se va a animar
+    2) Transition-duration ---> duración de la transición
+    3) Transition-timing-function ---> velocidad del cambio
+    4) Transition-delay ---> retraso antes de comenzar
+*/
+
+.boton {
+    background-color: aquamarine;
+    color:darkblue;
+    border: 2px solid darkblue;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: 
+        background-color 0.5s ease, 
+        transform 2s ease-in-out 1s;
+}
+
+.boton:hover {
+    background-color: antiquewhite;
+    transform: scale(1.5)
+}
+
+/* TRANSFORMACIONES */
+
+/*
+    1) translate(x, y) ---> desplaza el elemento
+    2) scale(x, y) ---> escala el tamaño
+    3) rotate(deg) ---> rota el elemento
+    4) skew(x, y) en deg ---> inclina el elemento
+*/
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 50px auto;
+    transition: transform 0.5s;
+}
+
+.caja:hover {
+    transform: translateX(-100px) rotate(45deg) skew(25deg, 0deg);
+}
+
+
+/* ANIMACIONES */
+
+/*
+    1) animation-name ---> nombre de la animación, del bloque @keyframes
+    2) animation-duration ---> duración del ciclo de la animación
+    3) animation-timing-function ---> curva de velocidad
+    4) animation-delay ---> retraso antes de que comience la animación
+    5) animation-iteration-count ---> veces que se repite (o infinite)
+    6) animation-direction ---> normal, reverse, alternate
+    7) animation-fill-mode ---> mantiene el último estado al terminar (forwards)
+*/
+
+@keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(200px); }
+}
+
+.cajaAnimada {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(161, 32, 178);
+    margin-bottom: 20px;
+    animation: mover 2s ease-in-out infinite alternate;
+}
+
+@keyframes colores {
+    0% { background-color: rgb(203, 203, 54); }
+    50% { background-color: rgb(203, 116, 54); }
+    100% { background-color: rgb(203, 54, 54); }
+}
+
+.cajaAnimadaPasos {
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 178, 61);
+    animation: colores 3s linear infinite;
+}
+
+/* Ejemplo loader */
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader {
+    margin: 100px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(8, 8, 255);
+    border-top: 5px solid rgb(255, 0, 204);
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}

@@ -1,0 +1,156 @@
+/* SELECTOR UNIVERSAL */
+/* Afecta a todos los elementos del HTML */
+/* Ejemplo: Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* SELECTOR ETIQUETA */
+/* Se aplica a todas las etiquetas que seleccionamos del documento HTML */
+
+p {
+    color: blue !important;
+}
+
+/* SELECTOR POR CLASE */
+/*Se puede aplicar una clase a muchos elementos  */
+
+.destacado {
+    color:blueviolet;
+    font-weight: bold;
+}
+
+/* SELECTOR POR ID */
+/* Solo hay un id por elemento, tiene que ser único */
+
+#titulo-principal {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* SELECTORES DESCENDIENTES - Todos los hijos */
+
+section p {
+    text-decoration: underline;
+}
+
+/* SELECTORES HIJOS DIRECTOS */
+div > p {
+    color:red;
+}
+
+/* SELECTORES MULTIPLES O AGRUPADOS */
+
+h2, h3 {
+    color: grey;
+}
+
+/* SELECTORES COMBINADOS */
+p.aviso {
+    color:orange;
+}
+
+/* SELECTORES HERMANOS */
+/* Hermano adyacente + */
+
+h4 + p {
+    color:deeppink;
+}
+
+/* Hermano general ~ */
+
+h5 ~ p {
+    color: green;
+}
+
+/* COMBINANDO RELACIONES */
+
+section article p {
+    color: pink;
+}
+
+section > p {
+    color:black;
+} 
+
+
+/** EJEMPLO COMPLETO */
+
+section p {
+    color: grey;
+}
+
+section > p {
+    color: darkblue;
+}
+
+.extra {
+    color:orange;
+    font-style: italic;
+}
+
+/* SELECTORES DE ATRIBUTOS */
+/*
+    = ---> input[type="email"] ---> es igual
+    ^= ---> a[href^="https"] ---> empieza por
+    $= ---> a[href$=".com"] ---> termina en
+    *= ---> [class*="boton"] ---> contiene la palabra
+*/
+
+/* Cualquier elemento con atributo href */
+a[href] {
+    color:green;
+}
+
+/* href que empiezan por https */
+a[href^="https"] {
+    text-transform: uppercase;
+}
+
+/* inputs solo de tipo email */
+input[type="email"]{
+    border: 2px solid red;
+}
+
+/* PSEUDO-CLASES */
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+/* PSEUDO-CLASES de Posición */
+
+p:first-child { color: green; }
+p:last-child { color: red; }
+p:nth-child(2) { color: blue; }
+
+/* PSEUDO-ELEMENTOS */
+
+p::first-line {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 24px;
+    color: red;
+}
+
+p::before {
+    content: "👉 ";
+}
+
+p::after {
+    content: " 👈";
+}
