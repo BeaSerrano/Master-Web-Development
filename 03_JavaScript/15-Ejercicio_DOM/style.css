@@ -1,0 +1,65 @@
+body { 
+    font-family: system-ui, sans-serif; 
+    max-width: 700px; 
+    margin: 40px auto; 
+}
+
+.acciones { 
+    display: flex; 
+    gap: 8px; 
+    align-items: center; 
+    margin-bottom: 12px; 
+}
+
+#tarea { 
+    padding: 8px; 
+    flex: 1; 
+}
+
+#agregar { 
+    padding: 8px 12px; 
+    cursor: pointer; 
+}
+
+#contador { 
+    font-size: .9rem; 
+    color: #666; 
+}
+
+#lista { 
+    list-style: none; 
+    padding: 0; 
+}
+
+#lista li { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 8px;
+    padding: 10px 12px; 
+    border: 1px solid #e6e6e6; 
+    border-radius: 8px; 
+    margin: 6px 0; 
+}
+
+#lista li .texto { 
+    flex: 1; 
+    cursor: pointer; 
+}
+
+#lista li.completada .texto { 
+    text-decoration: line-through; color: #999; 
+}
+
+.borrar { 
+    border: 0; 
+    background: #ffefef; 
+    color: #a00; 
+    padding: 6px 8px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+}
+
+.borrar:hover { 
+    background: #ffdede; 
+}

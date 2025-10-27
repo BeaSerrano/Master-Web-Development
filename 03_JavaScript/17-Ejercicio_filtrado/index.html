@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio Filtrar imágenes</title>
+</head>
+<body>
+    <h1>Ejercicio Filtrar imágenes</h1>
+
+    <main class="wrap">
+        <section id="controles" class="controles">
+            <div id="filtros" class="filtros" role="tablist" aria-label="Filtros de categoría">
+                <button data-filtro="todos" class="activo" role="tab" aria-selected="true">Todos</button>
+                <button data-filtro="naturaleza" role="tab" aria-selected="false">Naturaleza</button>
+                <button data-filtro="animales" role="tab" aria-selected="false">Animales</button>
+                <button data-filtro="ciudades" role="tab" aria-selected="false">Ciudades</button>
+            </div>
+            <!-- Bonus: búsqueda por texto -->
+            <input id="buscador" type="text" placeholder="Buscar por texto..." aria-label="Buscar imágenes por texto" />
+        </section>
+
+        <section id="galeria" class="galeria" aria-live="polite">
+            <figure class="card naturaleza">
+                <img src="img/bosque.png" alt="Bosque" />
+                <figcaption>Bosque</figcaption>
+            </figure>
+            <figure class="card animales">
+                <img src="img/leon.png" alt="León" />
+                <figcaption>León</figcaption>
+            </figure>
+            <figure class="card naturaleza">
+                <img src="img/playa.png" alt="Playa" />
+                <figcaption>Playa</figcaption>
+            </figure>
+            <figure class="card ciudades">
+                <img src="img/ny.png" alt="Nueva York" />
+                <figcaption>Nueva York</figcaption>
+            </figure>
+            <figure class="card animales">
+                <img src="img/gato.png" alt="Gato" />
+                <figcaption>Gato</figcaption>
+            </figure>
+            <figure class="card ciudades">
+                <img src="img/londres.png" alt="Londres" />
+                <figcaption>Londres</figcaption>
+            </figure>
+        </section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
