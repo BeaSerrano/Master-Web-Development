@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Final HTML</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Mi Web Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- Sección Sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>¡Hola, me llamo Bea! Soy vuestra profesora de Desarrollo Web.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptatum nemo? A officia fugiat necessitatibus inventore asperiores voluptatibus porro provident at mollitia ad, cum totam. Ducimus incidunt blanditiis ipsam deserunt.</p>
+            <figure>
+                <img src="https://static.vecteezy.com/system/resources/previews/042/332/098/non_2x/default-avatar-profile-icon-grey-photo-placeholder-female-no-photo-images-for-unfilled-user-profile-greyscale-illustration-for-socail-media-web-vector.jpg" alt="Foto perfil Bea" width="150">
+                <figcaption>Esta soy yo en mi puesto de trabajo</figcaption>
+            </figure>
+        </section>
+        <!-- Sección Proyectos -->
+        <section id="proyectos">
+            <h2>Proyectos recientes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, et delectus quibusdam beatae similique architecto a aliquam cupiditate, vero itaque tenetur consectetur excepturi in enim non officiis modi ea eius.</p>
+            <ul>
+                <li>Mi primer blog en HTML</li>
+                <li>Una carta digital</li>
+                <li>Formulario de registro de bicicletas</li>
+            </ul>
+
+            <h3>Resumen de proyectos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Año</th>
+                        <th>Tecnología</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blog HTML</td>
+                        <td>2025</td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>Formulario</td>
+                        <td>2025</td>
+                        <td>HTML5</td>
+                    </tr>
+                    <tr>
+                        <td>Página Personal</td>
+                        <td>2025</td>
+                        <td>HTML + CSS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Sección Multimedia -->
+        <section>
+            <h2>Multimedia</h2>
+            <p>Algunos recursos inspiradores:</p>
+
+            <video src="/recursos/video-demo.mp4" type="video/mp4" width="400" controls>
+                Tu navegador no soporta este vídeo
+            </video>
+
+            <audio src="/recursos/audio-demo.mp3" type="audio/mp3" controls>
+                Tu navegador no soporta este audio
+            </video>
+        </section>
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
+
+                    <br>
+
+                    <label for="motivo">Motivo del contacto:</label>
+                    <select name="motivo" id="motivo">
+                        <option value="consulta">Consulta</option>
+                        <option value="colaboracion">Propuesta de colaboración</option>
+                        <option value="otro">Otro motivo</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje">Deja tu mensaje</textarea>
+
+                    <br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar formulario">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p>2025 Bea - Desarrollo Web - <a href="mailto:bea@example.com">Contáctame</a></p>
+    </footer>
+</body>
+</html>
